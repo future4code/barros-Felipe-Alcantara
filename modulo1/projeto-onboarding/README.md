@@ -4,7 +4,7 @@ Esse repositório vai acompanhar vocês até o final do curso, para mantermos a 
 
 ```
 .
-├── modulo1
+├── modulo1 (pasta)
 │   ├── nome-da-aula
 │   ├── nome-da-aula
 │   └── nome-do-projeto
@@ -16,7 +16,7 @@ Esse repositório vai acompanhar vocês até o final do curso, para mantermos a 
 │   ├── nome-da-aula
 │   └── nome-do-projeto
 |
-├── modulo3
+├── modulo3 (pasta)
 │   ├── nome-da-aula
 │   ├── nome-da-aula
 │   ├── nome-da-aula
