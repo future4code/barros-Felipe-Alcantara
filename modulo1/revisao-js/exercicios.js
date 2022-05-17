@@ -3,21 +3,28 @@
 //    -> NÃO MODIFIQUE OS PARÂMETROS DAS FUNÇÕES!!! ()
 
 // EXERCÍCIO 01
+// Escreva uma função que recebe um array como parâmetro e retorna a quantidade de elementos que há nele.
 function retornaTamanhoArray(array) {
   // return array.length
 }
 
 // EXERCÍCIO 02
+// Escreva uma função que recebe um array como parâmetro e retorne este array invertido.
+// Exemplo: Para o array [8, 23, 16, 10] dado como entrada, retorne [10, 16, 23, 8]
 function retornaArrayInvertido(array) {
   // return array.reverse()
 }
 
 // EXERCÍCIO 03
+// Escreva uma função que recebe um array de números e retorne o array com os números em ordem crescente.
+// Exemplo: [3, 2, 1, 4, 7] retorna [1, 2, 3, 4, 7]
 function retornaArrayOrdenado(array) {
   // return array.sort((a, b) => a - b)
 }
 
 // EXERCÍCIO 04
+// Escreva uma função que receba um array de números e retorne um novo array com apenas os números pares desse array de entrada.
+// exemplo: [1, 2, 3, 4, 5, 6] deve retornar [2, 4, 6]
 function retornaNumerosPares(array) {
   // const numeroPar = array.filter(par => {
   //   if (par % 2 === 0) {
@@ -26,6 +33,8 @@ function retornaNumerosPares(array) {
   // })
 }
 // EXERCÍCIO 05
+// Escreva uma função que recebe um array de números e retorna um array com os números pares elevados a 2.
+// exemplo: [1, 2, 3, 4, 5, 6] deve retornar [4, 16, 36]
 function retornaNumerosParesElevadosADois(array) {
   // let par = array.filter((item, indece, array) => {
   //   return item % 2 === 0
@@ -37,8 +46,17 @@ function retornaNumerosParesElevadosADois(array) {
 }
 
 // EXERCÍCIO 06
+// Escreva uma função que receba um array de números e retorne o maior número dele.
+// [1, 5, 3, 7, 5, 2] deve retornar 7
 function retornaMaiorNumero(array) {
-  let MaiorNumero
+  let maior = 0
+
+  for (i = 0; i < array.length; i++) {
+    if (array[i] > maior) {
+      maior = array[i]
+    }
+    return maior
+  }
 }
 
 // EXERCÍCIO 07
