@@ -10,7 +10,23 @@
  * 
  * 
  */
+//1 - Imprime uma mensagem no console "Boas vindas ao jogo de Blackjack!".
+// console.log('Bem vindo ao Jogo BlackJack!')
 
+//2 - Envia um confirm, perguntando ao usuário: "Quer iniciar uma nova rodada?".
+
+let mensagem = confirm('Quer iniciar uma nova rodada?')
+
+while (mensagem === true) {
+  mensagem = confirm('Aperte OK para uma nova aposta')
+
+  const usuario = comprarCarta()
+
+  const pc = comprarCarta()
+
+  console.log(`Usuário - cartas:  ${usuario.texto}, ${usuario.valor}`)
+  console.log(`computador - cartas: ${pc.texto}, ${pc.valor}`)
+=======
 // 1 )
 console.log('Bem vindo ao jogo de Blackjack!')
 
@@ -41,4 +57,5 @@ if (totalComputador > totalUsuario) {
   console.log('Deu empate!')
 } else {
   console.log('O Jogo acabou!')
+
 }
