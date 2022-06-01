@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* cabeçalho da pagina  */
+
+div{
+  display: flex;
+  gap: 30px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  background-color: mediumvioletred;
+  padding: 15px;
+  width: 100%;
+  height: 70px;
+  align-items: center;  
+
+}
+
+/* botão de login */
+button {
+ padding: 4px 15px;
+
+}
+.container{
+  display: flex;
+  
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#f2d0e0;
+  width: 250px;
+  height: 340px;
+  
+}
+
+
+
+/* botõs da navegação(home, produtos, carrinho, perfil) */
+.btn-nav{
+  text-decoration: none;
+  padding: 7px;
+  color: black;
+}
+
+ul{
+  list-style-type: none;
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+
+  
+}
+
+section{
+  box-shadow:1px 3px 5px 2px darkgray;
+  margin: 5px;
+  width: 200px;
+}
+
+img {
+  width: 100%;
+}
+
+.img-icons{
+  width: 20px;
+  height: 20px;
+  
+}
+
+h2, p {
+  text-align: center;
+}
+
+/* rodape */
+footer{
+  display: flex;
+  background-color: mediumvioletred;
+  padding: 15px;
+  justify-content: center;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
