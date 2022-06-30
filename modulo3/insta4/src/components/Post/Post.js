@@ -32,7 +32,7 @@ function Post(props) {
   }
 
   const aoEnviarComentario = () => {
-    setComentando(false)
+    setComentando(true)
     setNumeroComentarios(numeroComentarios + 1)
   }
 
@@ -47,7 +47,7 @@ function Post(props) {
   let componenteComentario
 
   if (comentando) {
-    componenteComentario = <SecaoComentario aoEnviar={aoEnviarComentario} />
+    componenteComentario = <SecaoComentario aoEnviar={aoEnviarComentario}/>
   }
 
   return (
@@ -64,6 +64,7 @@ function Post(props) {
       <img className="PostPhoto" src={props.fotoPost} alt={'Imagem do post'} />
 
       <div className="PostFooter">
+        
         <IconeComContador
           icone={iconeCurtida}
           onClickIcone={onClickCurtida}
