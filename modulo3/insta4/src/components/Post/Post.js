@@ -15,12 +15,12 @@ function Post(props) {
 
   const onClickCurtida = () => {
     setCurtido(!curtido)
-    if(curtido) {
-    setnumeroCurtidas(numeroCurtidas - 1)
-  }else{
-    setnumeroCurtidas(numeroCurtidas + 1)
-  }
-    console.log("Curtiu")
+    if (curtido) {
+      setnumeroCurtidas(numeroCurtidas - 1)
+    } else {
+      setnumeroCurtidas(numeroCurtidas + 1)
+    }
+    console.log('Curtiu')
   }
 
   const onClickComentario = () => {
@@ -47,7 +47,7 @@ function Post(props) {
   let componenteComentario
 
   if (comentando) {
-    componenteComentario = <SecaoComentario aoEnviar={aoEnviarComentario}/>
+    componenteComentario = <SecaoComentario aoEnviar={aoEnviarComentario} />
   }
 
   return (
@@ -64,7 +64,6 @@ function Post(props) {
       <img className="PostPhoto" src={props.fotoPost} alt={'Imagem do post'} />
 
       <div className="PostFooter">
-        
         <IconeComContador
           icone={iconeCurtida}
           onClickIcone={onClickCurtida}
