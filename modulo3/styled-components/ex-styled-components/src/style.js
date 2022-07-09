@@ -28,7 +28,7 @@ export const Centro = styled.main`
   align-items: flex-end;
   height: 80vh;
   width: 100%;
-
+  
   input {
     align-items: end;
   }
@@ -52,4 +52,19 @@ export const Rodape = styled.footer`
   height: 50px;
   align-items: center;
   
+`
+export const DivCard = styled.li`
+  display: flex;
+  height: 30px;
+  width: 50%px;
+  padding: 10px;
+  background-color: #e9db79;
+  list-style: none;
+  border-radius: 3px;
+  justify-content: space-between;
+  margin-top: 20px;
+ 
+ div{
+  align-items: center; 
+ }
 `

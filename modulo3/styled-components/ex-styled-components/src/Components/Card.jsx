@@ -1,10 +1,19 @@
+import { DivCard } from '../style'
+
 function Card(props){
   return(
-    <>
-    <small>{props.mensagem}</small>
-    <small>{props.hora}</small>
+
+    <DivCard>
+    <div>
+        <p>{props.mensagem}</p>
+    </div>
+
+    <div>
+        <small>{props.hora}</small>
+    </div>
+    </DivCard>
     
-    </>
+    
   )
 }
 
