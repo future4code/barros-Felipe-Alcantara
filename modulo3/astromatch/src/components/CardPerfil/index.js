@@ -46,7 +46,7 @@ font-size: 24px;
 `
 const Idade = styled.div`
 margin-left: 10px;
-font-size: 20px;
+font-size: 24px;
 `
 const Descriacao = styled.p`
 margin-top: 5px;
