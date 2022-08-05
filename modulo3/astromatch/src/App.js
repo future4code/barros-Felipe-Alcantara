@@ -11,18 +11,17 @@ text-align:center ;
 const Header = styled.div`
 position: absolute;
 
-span{
+    span{
+    display: flex ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    margin-top: 15px;
+    color:greenyellow ;
+    font-weight: bold ;
 
-display: flex ;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-size: 30px;
-margin-top: 15px;
-color:greenyellow ;
-font-weight: bold ;
-
-  i{
-  color: green;
-  font-weight: bold ;
+    i{
+    color: green;
+    font-weight: bold ;
   }
 
 }
@@ -36,7 +35,7 @@ background: rgb(238,174,202);
 background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 border-radius: 15px;
 height: 600px;
-width: 450px;
+width: 470px;
 `
 
 export default function App() {

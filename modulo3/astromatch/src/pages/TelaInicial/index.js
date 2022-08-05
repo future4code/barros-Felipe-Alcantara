@@ -14,9 +14,9 @@ export default function TelaInicial(props) {
 
     useEffect(() => {pegaPerfil()}, [atualiza])
 
-    const urlGet="https://us-central1-missao-newton.cloudfunctions.net/astroMatch/felipe-alcantara-barros/person"
+    const urlGetProfile="https://us-central1-missao-newton.cloudfunctions.net/astroMatch/felipe-alcantara-barros/person"
     const pegaPerfil = () => {
-        axios.get(urlGet)
+        axios.get(urlGetProfile)
             .then(response => setPerfil(response.data.profile))
             .catch(erro => console.log(erro))}
 

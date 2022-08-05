@@ -13,15 +13,15 @@ export default function TelaMatches(props) {
 
 
     const pegaMatches = () => {
-        const urlGet= "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/felipe-alcantara-barros/matches"
-        axios.get(urlGet)
+        const urlGetMatchs= "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/felipe-alcantara-barros/matches"
+        axios.get(urlGetMatchs)
             .then(response => setMatches(response.data.matches))
             .catch(erro => console.log(erro))
     }
     
-    const urlPut= "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/felipe-alcantara-barros/clear"
+    const urlClear= "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/felipe-alcantara-barros/clear"
     const limparLista = () => {
-        axios.put(urlPut)
+        axios.put(urlClear)
             .then(response => pegaMatches(response.data.matches))
             .catch(erro => console.log(erro))
     }
