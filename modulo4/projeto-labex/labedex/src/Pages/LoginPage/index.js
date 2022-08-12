@@ -1,6 +1,6 @@
 
 export function LoginPage(){
   return(
-    <p> LoginPage </p>
+    <h1> LoginPage </h1>
   )
 }

@@ -2,6 +2,6 @@
 
 export function ListTripsPage(){
   return(
-    <p> ListTripsPage </p>
+    <h1> ListTripsPage </h1>
   )
 }

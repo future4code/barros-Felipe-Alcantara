@@ -2,6 +2,6 @@
 
 export function ApplicationFormPage(){
   return(
-    <p> AplicationFormPage </p>
+    <h1> AplicationFormPage </h1>
   )
 }
