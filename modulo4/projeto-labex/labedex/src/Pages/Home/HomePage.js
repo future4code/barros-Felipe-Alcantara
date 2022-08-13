@@ -1,18 +1,25 @@
 import { useNavigate } from "react-router-dom"
+import {Container} from "./style"
 
 export function HomePage(){
-
   const navigate = useNavigate();
   
-  const goToAbout = () => {
+  const goToAdmin = () => {
     navigate("/admin")
-  }
+    }
   
+    const goToListTrip = () => {
+      navigate("/listadeviagem")
+      }
+
   return(
-    <section>
-      <h1> Home Page</h1>
-      <button onClick={goToAbout}> Admin Home</button>
-    </section>
+    <Container>
+      <main>
+      <h1> LaBex</h1>
+      <button onClick={goToAdmin}> Áera Administrativa</button>
+      <button onClick={goToListTrip}> Lista de Viagens </button>
+      </main>
+    </Container>
   )
 }
 
