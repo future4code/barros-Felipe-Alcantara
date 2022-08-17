@@ -8,16 +8,16 @@ export function HomePage(){
     navigate("/admin")
     }
   
-    const goToListTrip = () => {
+    const goToListTripPage = () => {
       navigate("/listadeviagem")
       }
 
   return(
     <Container>
       <main>
-      <h1> LaBex</h1>
+      <h1> LaBex Home</h1>
       <button onClick={goToAdmin}> Áera Administrativa</button>
-      <button onClick={goToListTrip}> Lista de Viagens </button>
+      <button onClick={goToListTripPage}> Lista de Viagens </button>
       </main>
     </Container>
   )

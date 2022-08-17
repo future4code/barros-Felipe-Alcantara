@@ -14,7 +14,7 @@ border: 1px solid;
     color: #fff;
     justify-content:space-between ;
     text-align: center ;
-    line-height: 50px ;
+    line-height: 100px ;
   
   }
 
@@ -23,7 +23,17 @@ border: 1px solid;
   }
 
 button {
-  margin: 0 10px;
+  margin: 50px 40px 84px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: filter 0.2s;
+  
+
+  :hover{
+    filter: brightness(0.9)
+  }
   
   
 }

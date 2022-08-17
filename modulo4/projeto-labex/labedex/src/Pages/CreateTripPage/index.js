@@ -2,6 +2,6 @@
 
 export function CreatTripPage(){
   return(
-    <h1> CreatTripPage</h1>
+    <h1> creatTripPage </h1>
   )
 }

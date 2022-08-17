@@ -8,7 +8,7 @@ import { ListTripsPage } from './ListTripsPage';
 import { LoginPage } from './LoginPage';
 import { TripDetailsPage } from './TripDetailsPage';
 
-function Router() {
+export function Router() {
   return (
     <BrowserRouter>
       <Routes>
@@ -22,12 +22,5 @@ function Router() {
 
       </Routes>
     </BrowserRouter>
-
-
-
-
-
   );
 }
-
-export default Router; 

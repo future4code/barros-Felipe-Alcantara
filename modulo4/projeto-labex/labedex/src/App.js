@@ -1,10 +1,15 @@
-import "./App.css"
+import { GlobaStyle } from './GlobalStyle';
 import React from 'react';
-import Router  from './Pages/Router'
+import {Router} from './Pages/Router'
+
 
 function App() {
+
   return (
+    <>
+      <GlobaStyle/>
       <Router/>
+    </>
   );
 }
 
