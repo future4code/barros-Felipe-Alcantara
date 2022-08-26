@@ -2,9 +2,10 @@ import { useNavigate } from "react-router-dom"
 import { Container } from "./style"
 import { useRequestData } from '../../Hooks/useRequestData';
 import { BASE_URL} from "../../Constants";
+
 export function ListTripsPage(){
 
-    const [listaDeViagens, loading, erro] = useRequestData(`${BASE_URL}trips`)
+    const [listaDeViagens, loading, erro] = useRequestData(`${BASE_URL}felipe-alcantara-barros/trips`)
 
     const navigate = useNavigate()
     const goToHome = () => {
@@ -16,14 +17,12 @@ export function ListTripsPage(){
     }
 
     
-    const trips = listaDeViagens.trips && listaDeViagens.trips .map((trip)=>{
+    const trips = listaDeViagens && listaDeViagens.trips.map((trip)=>{
       return( 
       <div key={trip.id}>
-        <li>{trip.date}</li>
-        <li>{trip.description}</li>
         <li>{trip.name}</li>
-        <li>{trip.durationInDays}</li>
         <li>{trip.planet}</li>
+        <li>{trip.date}</li>
       </div>
       )
     })

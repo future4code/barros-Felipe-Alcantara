@@ -1,12 +1,12 @@
 import React from 'react'
 import { BrowserRouter, Routes , Route} from 'react-router-dom'
-import { AdminHomePage } from './AdminHomePage';
-import { ApplicationFormPage } from './ApplicationFormPage';
-import {HomePage} from './Home/HomePage'
-import {CreatTripPage} from './CreateTripPage'; // 
-import { ListTripsPage } from './ListTripsPage';
-import { LoginPage } from './LoginPage';
-import { TripDetailsPage } from './TripDetailsPage';
+import { AdminHomePage } from './Pages/AdminHomePage';
+import { ApplicationFormPage } from './Pages/ApplicationFormPage';
+import {HomePage} from './Pages/Home/HomePage'
+import {CreatTripPage} from './Pages/CreateTripPage'; // 
+import { ListTripsPage } from './Pages/ListTripsPage';
+import { LoginPage } from './Pages/LoginPage';
+import { TripDetailsPage } from './Pages/TripDetailsPage';
 
 export function Router() {
   return (

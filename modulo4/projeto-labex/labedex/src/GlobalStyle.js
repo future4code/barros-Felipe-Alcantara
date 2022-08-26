@@ -1,6 +1,5 @@
 
 import { createGlobalStyle } from "styled-components";
-import img from './img.jpg'
 export const GlobaStyle = createGlobalStyle`
 
 *{

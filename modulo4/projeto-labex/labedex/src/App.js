@@ -1,6 +1,6 @@
 import { GlobaStyle } from './GlobalStyle';
 import React from 'react';
-import {Router} from './Pages/Router'
+import {Router} from './Router'
 
 
 function App() {
